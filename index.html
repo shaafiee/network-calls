@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <script>
+            var test = "this is a \"/go/to/something\" very strange '/another/thing' that has 'https://something/other' and \"http://for/shit\" so";
+            var result = test.replace(/"((http)(s)?(:\/))?\/.*?"/g, "\"\"");
+            var result = result.replace(/'((http)(s)?(:\/))?\/.*?'/g, "\'\'");
+            alert(result);
+        </script>
+    </body>
+</html>>
